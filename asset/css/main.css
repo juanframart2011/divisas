@@ -1,0 +1,41 @@
+body{
+	/*background: url( "../img/background/dolar.jpg" );*/
+	background: #08298A;
+	color: white;
+}
+header{
+	background: #5882FA;
+	margin-top: 3%;
+	padding: 5px;
+}
+img{
+	margin: 0 auto;
+}
+.box{
+	height: 300px;
+}
+.box h1{
+	font-size: 60px;
+}
+.box .background{
+	background: black;
+	height: 100%;
+	opacity: 0.6;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+.box .compra{
+	color: green;
+	font-weight: bold;
+}
+.box .venta{
+	color: red;
+	font-weight: bold;
+}
+.coin{
+	color: #0A0A2A;
+}
+.content-coin{
+	margin-top: 5%;
+}
