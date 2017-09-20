@@ -1,38 +1,17 @@
 $( document ).ready( function(){
 
-	$( ".form-control" ).keyup( function(){
+	var coin = window.location.hash;
+	coin = coin.split( "#" );
+	coin = coin[1];
+	
+	$.getJSON( 'asset/data/data.json', function( json, textStatus ){
 
-		var input = $( this ).attr( "id" );
-		var value = $( this ).val();
-		var currency = 0;
-		
-		//$.getJSON( 'asset/data/data.json', {param1: 'euro'}, function( json, textStatus ){
-		$.getJSON( 'asset/data/data.json', function( json, textStatus ){
+		$.each( json, function( idx, data ){
 
-			if( input == "dolar" ){
+			if( idx == coin ){
 
-				$.each( json, function( idx, data ){
-
-					if( idx != "dolar" ){
-
-						$( "#" + idx ).val( value * data );
-					}
-				});
-			}
-			else{
-
-				currency = json[input];
-				$( "#dolar" ).val( value * currency );
-
-				value = $( "#dolar" ).val();
-
-				$.each( json, function( idx, data ){
-
-					if( idx != "dolar" && idx != input ){
-
-						$( "#" + idx ).val( value * data );
-					}
-				});
+				$( ".compra" ).find( "span" ).html( data.compra );
+				$( ".venta" ).find( "span" ).html( data.venta );
 			}
 		});
 	});
