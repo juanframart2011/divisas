@@ -27,121 +27,113 @@
 			<table class="table">
 				<h1 class="label-success text-center">Adminitrador Cambio de Divisa</h1>
 				<h3 class="text-center">Recuerde que todo es en base a el dolar</h3>
+				<thead>
+					<tr>
+						<td class="text-center" width="50%">
+							<h2>Moneda</h2>
+						</td>
+						<td class="text-center" width="25%">
+							<h2>Compra</h2>
+						</td>
+						<td class="text-center" width="25%">
+							<h2>Venta</h2>
+						</td>
+					</tr>
+				</thead>
 				<tbody>
 					<tr>
-						<td class="text-center" width="50%">Euro</td>
 						<td class="text-center" width="50%">
-							<div class="row">
-								<div class="col-md-2">
-									<img class="img-responsive" src="asset/img/europe.png">
-								</div>
-								<div class="col-md-10">
-									<div class="form-group">
-										<input class="form-control" id="euro" name="euro" type="text" placeholder="0">
-									</div>
-								</div>
-							</div>
+							<img class="img-responsive" src="asset/img/europe.png" style="margin: 0px auto;">
+							Euro
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="euro_compra" name="euro_compra" type="text" placeholder="0">
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="euro_venta" name="euro_venta" type="text" placeholder="0">
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="text-center" width="50%">
+							<img class="img-responsive" src="asset/img/libra.png" style="margin: 0px auto;">
+							Libra Británica
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="libra_compra" name="libra_compra" type="text" placeholder="0">
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="libra_venta" name="libra_venta" type="text" placeholder="0">
 						</td>
 					</tr>
 
 					<tr>
-						<td class="text-center" width="50%">Libra Británica</td>
 						<td class="text-center" width="50%">
-							<div class="row">
-								<div class="col-md-2">
-									<img class="img-responsive" src="asset/img/libra.png">
-								</div>
-								<div class="col-md-10">
-									<div class="form-group">
-										<input class="form-control" id="libra" name="libra" type="text" placeholder="0">
-									</div>
-								</div>
-							</div>
+							<img class="img-responsive" src="asset/img/japan.png" style="margin: 0px auto;">
+							Yen Japonés
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="yen_compra" name="yen_compra" type="text" placeholder="0">
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="yen_venta" name="yen_venta" type="text" placeholder="0">
 						</td>
 					</tr>
 
 					<tr>
-						<td class="text-center" width="50%">Yen Japonés</td>
 						<td class="text-center" width="50%">
-							<div class="row">
-								<div class="col-md-2">
-									<img class="img-responsive" src="asset/img/japan.png">
-								</div>
-								<div class="col-md-10">
-									<div class="form-group">
-										<input class="form-control" id="yen" name="yen" type="text" placeholder="0">
-									</div>
-								</div>
-							</div>
+							<img class="img-responsive" src="asset/img/china.png" style="margin: 0px auto;">
+							Yuan Chino
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="yuan_compra" name="yuan_compra" type="text" placeholder="0">
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="yuan_venta" name="yuan_venta" type="text" placeholder="0">
 						</td>
 					</tr>
 
 					<tr>
-						<td class="text-center" width="50%">Yuan Chino</td>
 						<td class="text-center" width="50%">
-							<div class="row">
-								<div class="col-md-2">
-									<img class="img-responsive" src="asset/img/china.png">
-								</div>
-								<div class="col-md-10">
-									<div class="form-group">
-										<input class="form-control" id="yuan" name="yuan" type="text" placeholder="0">
-									</div>
-								</div>
-							</div>
+							<img class="img-responsive" src="asset/img/argentina.png" style="margin: 0px auto;">
+							ARS Argentino
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="ars_compra" name="ars_compra" type="text" placeholder="0">
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="ars_venta" name="ars_venta" type="text" placeholder="0">
 						</td>
 					</tr>
 
 					<tr>
-						<td class="text-center" width="50%">ARS Argentino</td>
 						<td class="text-center" width="50%">
-							<div class="row">
-								<div class="col-md-2">
-									<img class="img-responsive" src="asset/img/argentina.png">
-								</div>
-								<div class="col-md-10">
-									<div class="form-group">
-										<input class="form-control" id="ars" name="ars" type="text" placeholder="0">
-									</div>
-								</div>
-							</div>
+							<img class="img-responsive" src="asset/img/colombia.png" style="margin: 0px auto;">
+							Peso Colombiano
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="col_compra" name="col_compra" type="text" placeholder="0">
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="col_venta" name="col_venta" type="text" placeholder="0">
 						</td>
 					</tr>
 
 					<tr>
-						<td class="text-center" width="50%">Peso Colombiano</td>
 						<td class="text-center" width="50%">
-							<div class="row">
-								<div class="col-md-2">
-									<img class="img-responsive" src="asset/img/colombia.png">
-								</div>
-								<div class="col-md-10">
-									<div class="form-group">
-										<input class="form-control" id="col" name="col" type="text" placeholder="0">
-									</div>
-								</div>
-							</div>
+							<img class="img-responsive" src="asset/img/mexico.png" style="margin: 0px auto;">
+							Peso Mexicano
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="mxn_compra" name="mxn_compra" type="text" placeholder="0">
+						</td>
+						<td class="text-center" width="25%">
+							<input class="form-control text-center" id="mxn_venta" name="mxn_venta" type="text" placeholder="0">
 						</td>
 					</tr>
 
 					<tr>
-						<td class="text-center" width="50%">Peso Mexicano</td>
-						<td class="text-center" width="50%">
-							<div class="row">
-								<div class="col-md-2">
-									<img class="img-responsive" src="asset/img/mexico.png">
-								</div>
-								<div class="col-md-10">
-									<div class="form-group">
-										<input class="form-control" id="mxn" name="mxn" type="text" placeholder="0">
-									</div>
-								</div>
-							</div>
-						</td>
-					</tr>
-
-					<tr>
-						<td class="text-center" colspan="2">
+						<td class="text-center" colspan="3">
 							<button class="btn-lg btn-success" type="submit">Guardar Divisas</button>
 						</td>
 					</tr>

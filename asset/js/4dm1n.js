@@ -5,7 +5,8 @@ $( document ).ready( function(){
 
 		$.each( json, function( idx, data ){
 
-			$( "#" + idx ).val( data );
+			$( "#" + idx + "_compra" ).val( data.compra );
+			$( "#" + idx + "_venta" ).val( data.venta );
 		});
 	});
 

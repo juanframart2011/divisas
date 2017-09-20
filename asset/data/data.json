@@ -1,1 +1,26 @@
-{"dolar":1,"euro":10,"libra":5,"mxn":158}
+{
+	"dolar":{
+		"compra":1,
+		"venta":1
+	},
+	"euro":{
+		"compra":1,
+		"venta":1.2
+	},
+	"libra":{
+		"compra":2,
+		"venta":2.3
+	},
+	"yen":{
+		"compra":154,
+		"venta":201
+	},
+	"col":{
+		"compra":2400,
+		"venta":2780
+	},
+	"mxn":{
+		"compra":16.21,
+		"venta":16.8
+	}
+}
