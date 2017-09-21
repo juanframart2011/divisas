@@ -1,6 +1,6 @@
 body{
-	/*background: url( "../img/background/dolar.jpg" );*/
-	background: #08298A;
+	background: url( "../img/body.jpg" ) no-repeat 100% 100%;
+	/*background: #08298A;*/
 	color: white;
 }
 header{
