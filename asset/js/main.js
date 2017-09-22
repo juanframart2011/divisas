@@ -8,11 +8,15 @@ $( document ).ready( function(){
 
 		$.each( json, function( idx, data ){
 
-			if( idx == coin ){
-
-				$( ".compra" ).find( "span" ).html( data.compra );
-				$( ".venta" ).find( "span" ).html( data.venta );
-			}
+			//if( idx == coin ){
+			console.log( idx );
+			$( "." + idx + "" ).find( ".compra" ).find( "span" ).html( data.compra );
+			$( "." + idx + "" ).find( ".venta" ).find( "span" ).html( data.venta );
+			//}
 		});
+	});
+
+	$('.carousel').carousel({
+		interval: 15000
 	});
 });
